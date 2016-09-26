@@ -1,0 +1,4 @@
+;template file for XssTestAttributeOnLoad payload
+;comments start with semicolon
+;payloads should be added line by line
+onload='javascript:alert(501337)'

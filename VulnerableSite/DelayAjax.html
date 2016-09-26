@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>AJax driven delay</title>
+</head>
+<body>
+    <div id="mydiv">Ajax driven delay</div>
+    <script>
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        xmlhttp = new XMLHttpRequest();
+
+        var delay = getParameterByName('a');
+
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.write(xmlhttp.responseText);
+            }
+        };
+
+        // open(url, true) issues an async request
+        xmlhttp.open("GET", "delay.aspx?a=" + delay, true);
+        xmlhttp.send();
+
+    </script>
+</body>
+</html>

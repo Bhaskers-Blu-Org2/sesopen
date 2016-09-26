@@ -1,0 +1,4 @@
+;template file for TemplateInjectionTest payload
+;comments start with semicolon
+;payloads should be added line by line
+Hello ${123*125}

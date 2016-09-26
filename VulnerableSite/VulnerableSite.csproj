@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\WebSec\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\WebSec\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\WebSec\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\WebSec\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VulnerableSite</RootNamespace>
+    <AssemblyName>VulnerableSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44355</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\WebSec\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="crossdomain.xml" />
+    <Content Include="Delay.aspx" />
+    <Content Include="Delay.html" />
+    <Content Include="DelayAjax.html" />
+    <Content Include="DelayContentType.aspx" />
+    <Content Include="DumpHeaders.aspx" />
+    <Content Include="file.js" />
+    <Content Include="Global.asax" />
+    <Content Include="PluginsTestPages\ServerError503.aspx" />
+    <Content Include="PluginsTestPages\BadRequest.aspx" />
+    <Content Include="PluginsTestPages\CacheControl.aspx" />
+    <Content Include="PluginsTestPages\ClickjackingTestPage.aspx" />
+    <Content Include="PluginsTestPages\CookieTesterPage.aspx" />
+    <Content Include="PluginsTestPages\CookieTesterPageEmptyCookies.aspx" />
+    <Content Include="PluginsTestPages\FingerPrintPage.aspx" />
+    <Content Include="PluginsTestPages\HttpResponseSplittingVulnPage.aspx" />
+    <Content Include="PluginsTestPages\NonIFramedPassword.aspx" />
+    <Content Include="PluginsTestPages\PostRequestXssTest.html" />
+    <Content Include="PluginsTestPages\ServerError200.aspx" />
+    <Content Include="PluginsTestPages\ServerSideIncludesVulnPage.aspx" />
+    <Content Include="PluginsTestPages\SqlInjectionVulnPage.aspx" />
+    <Content Include="PluginsTestPages\TemplateInjectionTestPage.aspx" />
+    <Content Include="PluginsTestPages\XContentTypeOptions.aspx" />
+    <Content Include="PluginsTestPages\XContentTypeOptionsMissing.aspx" />
+    <Content Include="PluginsTestPages\XNoJavascript.aspx" />
+    <Content Include="PluginsTestPages\XOpenRedirectToBadPlaces.aspx" />
+    <Content Include="PluginsTestPages\XOpenRedirectToBadPlacesHTTP.aspx" />
+    <Content Include="PluginsTestPages\XSafeJavascript.aspx" />
+    <Content Include="PluginsTestPages\XXssProtectionSetToOne.aspx" />
+    <Content Include="PluginsTestPages\XXssProtectionSetToZero.aspx" />
+    <Content Include="SimplePageWithForm.html" />
+    <Content Include="XmlResponse.aspx" />
+    <Content Include="NoBrowsing\Web.config" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ShowAlert.aspx" />
+    <Content Include="ShowAlert2.aspx" />
+    <Content Include="AutocompletePassword.aspx" />
+    <Content Include="vuln_domxss.html" />
+    <Content Include="InformationLeakage.aspx" />
+    <Content Include="UnsafePassword.aspx" />
+    <Content Include="InvalidOperationExceptionScreen.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Version\VersionAssemblyInfo.cs">
+      <Link>VersionAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Delay.aspx.cs">
+      <DependentUpon>Delay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delay.aspx.designer.cs">
+      <DependentUpon>Delay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DelayContentType.aspx.cs">
+      <DependentUpon>DelayContentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DelayContentType.aspx.designer.cs">
+      <DependentUpon>DelayContentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DumpHeaders.aspx.cs">
+      <DependentUpon>DumpHeaders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DumpHeaders.aspx.designer.cs">
+      <DependentUpon>DumpHeaders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\ServerError503.aspx.cs">
+      <DependentUpon>ServerError503.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\ServerError503.aspx.designer.cs">
+      <DependentUpon>ServerError503.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\BadRequest.aspx.cs">
+      <DependentUpon>BadRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\BadRequest.aspx.designer.cs">
+      <DependentUpon>BadRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\CacheControl.aspx.cs">
+      <DependentUpon>CacheControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\CacheControl.aspx.designer.cs">
+      <DependentUpon>CacheControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\ClickjackingTestPage.aspx.cs">
+      <DependentUpon>ClickjackingTestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\ClickjackingTestPage.aspx.designer.cs">
+      <DependentUpon>ClickjackingTestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\CookieTesterPage.aspx.cs">
+      <DependentUpon>CookieTesterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\CookieTesterPageEmptyCookies.aspx.cs">
+      <DependentUpon>CookieTesterPageEmptyCookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\FingerPrintPage.aspx.cs">
+      <DependentUpon>FingerPrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\FingerPrintPage.aspx.designer.cs">
+      <DependentUpon>FingerPrintPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\HttpResponseSplittingVulnPage.aspx.cs">
+      <DependentUpon>HttpResponseSplittingVulnPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\HttpResponseSplittingVulnPage.aspx.designer.cs">
+      <DependentUpon>HttpResponseSplittingVulnPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\NonIFramedPassword.aspx.cs">
+      <DependentUpon>NonIFramedPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\NonIFramedPassword.aspx.designer.cs">
+      <DependentUpon>NonIFramedPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\ServerError200.aspx.cs">
+      <DependentUpon>ServerError200.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\ServerError200.aspx.designer.cs">
+      <DependentUpon>ServerError200.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\ServerSideIncludesVulnPage.aspx.cs">
+      <DependentUpon>ServerSideIncludesVulnPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\SqlInjectionVulnPage.aspx.cs">
+      <DependentUpon>SqlInjectionVulnPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\TemplateInjectionTestPage.aspx.cs">
+      <DependentUpon>TemplateInjectionTestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\TemplateInjectionTestPage.aspx.designer.cs">
+      <DependentUpon>TemplateInjectionTestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XContentTypeOptions.aspx.cs">
+      <DependentUpon>XContentTypeOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XContentTypeOptions.aspx.designer.cs">
+      <DependentUpon>XContentTypeOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XContentTypeOptionsMissing.aspx.cs">
+      <DependentUpon>XContentTypeOptionsMissing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XContentTypeOptionsMissing.aspx.designer.cs">
+      <DependentUpon>XContentTypeOptionsMissing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XNoJavascript.aspx.cs">
+      <DependentUpon>XNoJavascript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XNoJavascript.aspx.designer.cs">
+      <DependentUpon>XNoJavascript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XOpenRedirectToBadPlaces.aspx.cs">
+      <DependentUpon>XOpenRedirectToBadPlaces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XOpenRedirectToBadPlaces.aspx.designer.cs">
+      <DependentUpon>XOpenRedirectToBadPlaces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XOpenRedirectToBadPlacesHTTP.aspx.cs">
+      <DependentUpon>XOpenRedirectToBadPlacesHTTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XOpenRedirectToBadPlacesHTTP.aspx.designer.cs">
+      <DependentUpon>XOpenRedirectToBadPlacesHTTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XSafeJavascript.aspx.cs">
+      <DependentUpon>XSafeJavascript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XSafeJavascript.aspx.designer.cs">
+      <DependentUpon>XSafeJavascript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XXssProtectionSetToOne.aspx.cs">
+      <DependentUpon>XXssProtectionSetToOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XXssProtectionSetToOne.aspx.designer.cs">
+      <DependentUpon>XXssProtectionSetToOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginsTestPages\XXssProtectionSetToZero.aspx.cs">
+      <DependentUpon>XXssProtectionSetToZero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PluginsTestPages\XXssProtectionSetToZero.aspx.designer.cs">
+      <DependentUpon>XXssProtectionSetToZero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowAlert.aspx.cs">
+      <DependentUpon>ShowAlert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAlert.aspx.designer.cs">
+      <DependentUpon>ShowAlert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAlert2.aspx.cs">
+      <DependentUpon>ShowAlert2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAlert2.aspx.designer.cs">
+      <DependentUpon>ShowAlert2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutocompletePassword.aspx.cs">
+      <DependentUpon>AutocompletePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformationLeakage.aspx.cs">
+      <DependentUpon>InformationLeakage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnsafePassword.aspx.cs">
+      <DependentUpon>UnsafePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvalidOperationExceptionScreen.aspx.cs">
+      <DependentUpon>InvalidOperationExceptionScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XmlResponse.aspx.cs">
+      <DependentUpon>XmlResponse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XmlResponse.aspx.designer.cs">
+      <DependentUpon>XmlResponse.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27653</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60655/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\WebSec\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\WebSec\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\WebSec\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\WebSec\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

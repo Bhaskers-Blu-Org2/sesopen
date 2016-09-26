@@ -1,0 +1,5 @@
+;template file for NullInjectionTester payload
+;comments start with semicolon
+;payloads should be added line by line
+\0
+%00

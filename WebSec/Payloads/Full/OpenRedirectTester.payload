@@ -1,0 +1,5 @@
+;template file for OpenRedirectTester payload
+;comments start with semicolon
+;payloads should be added line by line
+http://www.ikeahackers.net/
+www.ikeahackers.net/

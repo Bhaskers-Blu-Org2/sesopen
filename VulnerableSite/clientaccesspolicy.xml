@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<access-policy>
+  <cross-domain-access>
+    <!-- test data -->
+    <policy>
+      <allow-from http-request-headers="*">
+        <domain uri="*.amazon.com"/>
+      </allow-from>
+      <grant-to>
+        <resource path="/" include-subpaths="true"/>
+      </grant-to>
+    </policy>
+    <policy>
+      <allow-from http-request-headers="*">
+        <domain uri="*"/>
+      </allow-from>
+      <grant-to>
+        <resource path="/" include-subpaths="true"/>
+      </grant-to>
+    </policy>
+
+    <!-- based on real production config -->
+    <policy> </policy>
+    <policy>
+      <allow-from http-request-headers="*">
+        <domain uri="http://*.msn.com"/>
+        <domain uri="http://*.microsoft.com"/>
+      </allow-from>-<grant-to>
+        <resource include-subpaths="true" path="/videos/"/>
+        <resource include-subpaths="true" path="/music/"/>
+        <resource include-subpaths="true" path="/tv/"/>
+        <resource include-subpaths="true" path="/games/"/>
+        <resource include-subpaths="true" path="/movies/"/>
+        <resource include-subpaths="true" path="/entertainment/"/>
+        <resource include-subpaths="true" path="/videogames/"/>
+        <resource include-subpaths="true" path="/bingvideohub/"/>
+      </grant-to>
+    </policy>-<policy>
+      <allow-from http-request-headers="*">
+        <domain uri="http://www.bing.com"/>
+        <domain uri="http://*.bing4.com"/>
+      </allow-from>-<grant-to>
+        <resource include-subpaths="true" path="/ges/"/>
+      </grant-to>
+    </policy>-<policy>
+      <allow-from http-request-headers="*">
+        <domain uri="http://*.virtualearth.net"/>
+        <domain uri="http://*.virtualearth-int.net"/>
+      </allow-from>-<grant-to>
+        <resource include-subpaths="true" path="/socialstreamsdataservices"/>
+        <resource include-subpaths="false" path="/twitter/maps/backend"/>
+      </grant-to>
+    </policy>
+  </cross-domain-access>
+</access-policy>

