@@ -18,11 +18,12 @@ namespace WebSec.Common.TestInfrastructure
     public static class TestSetupHelpers
     {
         /// <summary>
-        /// Cleans the selenium driver.
+        /// Cleanup process.
         /// </summary>
-        public static void CleanSeleniumDriver()
+        /// <param name="processName">Name of the process.</param>
+        public static void CleanupProcess(string processName)
         {
-            Process[] chromedriver = Process.GetProcessesByName("chromedriver");
+            Process[] chromedriver = Process.GetProcessesByName(processName);
 
             foreach (var process in chromedriver)
             {
@@ -42,11 +43,9 @@ namespace WebSec.Common.TestInfrastructure
                     Path.Combine(
                         new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName,
                         "VulnerableSite"),
-                    Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-                @"IIS Express\IISExpress.EXE"),
-                    Constants.VulnerabilitiesSitePort, 
-                    false);
+                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), @"IIS Express\IISExpress.EXE"),
+                     Constants.VulnerabilitiesSitePort, 
+                     false);
             }
 
             if (CheckAvailableServerPort(Constants.VulnerabilitiesSiteSslPort))
@@ -55,9 +54,7 @@ namespace WebSec.Common.TestInfrastructure
                     Path.Combine(
                         new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName,
                         "VulnerableSite"),
-                    Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-                @"IIS Express\IisExpressAdminCmd.EXE"),
+                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), @"IIS Express\IisExpressAdminCmd.EXE"),
                     Constants.VulnerabilitiesSiteSslPort, 
                     true);
             }

@@ -28,7 +28,7 @@ namespace VulnerableSite.PluginsTestPages
             {
                 Response.Clear();
                 Response.ClearHeaders();
-                var cookie = new HttpCookie("SecuredCookie", "SecuredCookieValue") {Secure = true};
+                var cookie = new HttpCookie("SecuredCookie", "SecuredCookieValue") { Secure = true };
                 Response.SetCookie(cookie);
                 Response.Write("<html>");
                 Response.Write("<dummyContent>dummyContent</dummyContent>");

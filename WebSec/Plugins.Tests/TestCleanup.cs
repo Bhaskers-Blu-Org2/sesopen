@@ -10,12 +10,22 @@ namespace WebSec.Plugins.Tests
     using Library.Browser;
     using Library.Browser.Interfaces;
     using Library.Fiddler;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
     /// A test cleanup.
     /// </summary>
     internal static class TestCleanup
     {
+        /// <summary>
+        /// Assembly cleanup.
+        /// </summary>
+        [AssemblyCleanup]
+        public static void AssemblyCleanup()
+        {
+            TestSetupHelpers.CleanupProcess(Common.Constants.Chrome);
+        }
+
         /// <summary>
         /// Cleanup fiddler and browser instances.
         /// </summary>
@@ -24,7 +34,7 @@ namespace WebSec.Plugins.Tests
             FiddlerProxy.Cleanup(Constants.FiddlerPort);
             ((BrowserManager)ObjectResolver.Resolve<IBrowserManager>()).Dispose();
 
-            TestSetupHelpers.CleanSeleniumDriver();
+            TestSetupHelpers.CleanupProcess(Constants.ChromeDriver);
         }
     }
 }

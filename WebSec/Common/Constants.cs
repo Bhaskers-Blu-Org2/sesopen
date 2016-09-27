@@ -13,6 +13,16 @@ namespace WebSec.Common
     public sealed class Constants
     {
         /// <summary>
+        /// The chrome.
+        /// </summary>
+        public const string Chrome = "chrome";
+
+        /// <summary>
+        /// The chrome driver.
+        /// </summary>
+        public const string ChromeDriver = "chromedriver";
+
+        /// <summary>
         /// Html tag.
         /// </summary>
         public const string HtmlTag = "<html";

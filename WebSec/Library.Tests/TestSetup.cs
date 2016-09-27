@@ -26,8 +26,17 @@ namespace WebSec.Library.Tests
         public static void AssemblyInit(TestContext context)
         {
             AssertFailureExceptionFactory.ConfigureForMicrosoftTest();
-            TestSetupHelpers.CleanSeleniumDriver();
+            TestSetupHelpers.CleanupProcess(WebSec.Common.Constants.ChromeDriver);
             TestSetupHelpers.StartIisExpress();
+        }
+
+        /// <summary>
+        /// Assembly cleanup .
+        /// </summary>
+        [AssemblyCleanup]
+        public static void AssemblyCleanup()
+        {
+            TestSetupHelpers.CleanupProcess(WebSec.Common.Constants.Chrome);
         }
     }
 }
