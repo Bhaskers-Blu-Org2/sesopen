@@ -19,15 +19,6 @@ namespace WebSec.Plugins.Tests
     public class ClickJackingTests : PluginTestBase<ClickJacking>
     {
         /// <summary>
-        /// Class cleanup.
-        /// </summary>
-        [ClassCleanup]
-        public static void ClassCleanup()
-        {
-            TestCleanup.Cleanup();
-        }
-
-        /// <summary>
         /// The test protection headers not found.
         /// </summary>
         [TestMethod]

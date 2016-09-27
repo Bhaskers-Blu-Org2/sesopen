@@ -6,6 +6,7 @@
 namespace WebSec.Plugins.Tests
 {
     using Common;
+    using Common.TestInfrastructure;
     using Library.Browser;
     using Library.Browser.Interfaces;
     using Library.Fiddler;
@@ -22,6 +23,8 @@ namespace WebSec.Plugins.Tests
         {
             FiddlerProxy.Cleanup(Constants.FiddlerPort);
             ((BrowserManager)ObjectResolver.Resolve<IBrowserManager>()).Dispose();
+
+            TestSetupHelpers.CleanSeleniumDriver();
         }
     }
 }

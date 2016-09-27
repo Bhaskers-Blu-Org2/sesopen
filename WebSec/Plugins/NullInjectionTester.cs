@@ -110,6 +110,11 @@ namespace WebSec.Plugins
         /// <returns>A string describing the vulnerability evidence if a vulnerability exists, other string.Empty.</returns>
         private static string ExtractEvidence(string pagebody, string origpagebody)
         {
+            if (string.IsNullOrEmpty(pagebody) || string.IsNullOrEmpty(origpagebody))
+            {
+                return "Null page found, possible a target crash hapenned!";
+            }
+
             var testResult = PossibleVulnerabilities(origpagebody, pagebody);
 
             var evidence = string.Empty;

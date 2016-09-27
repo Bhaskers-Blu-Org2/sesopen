@@ -73,13 +73,8 @@ namespace WebSec.Library.Fiddler
         /// </param>
         public static void Initialize(string[] headers, int port)
         {
-            Cleanup(port);
-
-            if (headers == null)
-            {
-                return;
-            }
-
+            // re-initialize the mandatory headers
+            HeaderPairs.Clear();
             foreach (var header in headers)
             {
                 var tokens = header.Split(new[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
@@ -87,6 +82,12 @@ namespace WebSec.Library.Fiddler
                 {
                     HeaderPairs.Add(new KeyValuePair<string, string>(tokens[0], tokens[1]));
                 }
+            }
+
+            // don't start if already started
+            if (hasStarted)
+            {
+                return;
             }
 
             FiddlerApplication.BeforeRequest += FiddlerApplicationOnBeforeRequest;

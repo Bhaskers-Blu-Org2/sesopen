@@ -40,7 +40,7 @@ namespace WebSec.Common
         /// <summary>
         /// The fiddler port.
         /// </summary>
-        public const int FiddlerPort = 8877;
+        public const int FiddlerPort = 8879;
 
         /// <summary>
         /// Initializes static members of the WebSec.Common.Constants class.

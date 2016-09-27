@@ -18,6 +18,20 @@ namespace WebSec.Common.TestInfrastructure
     public static class TestSetupHelpers
     {
         /// <summary>
+        /// Cleans the selenium driver.
+        /// </summary>
+        public static void CleanSeleniumDriver()
+        {
+            Process[] chromedriver = Process.GetProcessesByName("chromedriver");
+
+            foreach (var process in chromedriver)
+            {
+                process.Kill();
+                process.WaitForExit();
+            }
+        }
+
+        /// <summary>
         /// Starts the IIS Express Server for the VulnerableSite project.
         /// </summary>
         public static void StartIisExpress()

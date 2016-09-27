@@ -26,6 +26,8 @@ namespace VulnerableSite
             Response.Clear();
             Response.ContentType = Request.ContentType;
 
+            Response.Headers.Add("test","value");
+
             Response.Write("<html>");
             Response.Write("<input type=\"button\"/>");
             Response.Write("<input type=\"password\" autocomplete=\"true\"/>");

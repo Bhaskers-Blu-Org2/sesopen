@@ -27,6 +27,7 @@ namespace WebSec.Library.Tests
         {
             AssertFailureExceptionFactory.ConfigureForMicrosoftTest();
             TestSetupHelpers.StartIisExpress();
+            TestSetupHelpers.CleanSeleniumDriver();
         }
     }
 }

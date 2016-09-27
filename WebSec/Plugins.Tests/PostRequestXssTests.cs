@@ -33,30 +33,6 @@ namespace WebSec.Plugins.Tests
         /// The test post request xss.
         /// </summary>
         [TestMethod]
-        public void TestPostRequestXssPositiveSuperLinkShare()
-        {
-            ObjectResolver.RegisterType<IProcessManager, ProcessManager>();
-            var browserInstances = new Dictionary<BrowserType, int> { { BrowserType.Chrome, 1 } };
-
-            using (var browserManager = new BrowserManager(browserInstances))
-            {
-                ObjectResolver.RegisterInstance<IBrowserManager>(browserManager);
-
-                // Setup
-                var target = Target.Create("http://superlinkshare.cloudapp.net");
-
-                // Execute
-                var vulns = ExecutePluginTestRequest(target);
-
-                vulns.Count.ShouldEqual(1);
-                vulns.ElementAt(0).TestedVal.ShouldNotBeEmpty();
-            }
-        }
-
-        /// <summary>
-        /// The test post request xss.
-        /// </summary>
-        [TestMethod]
         public void TestPostRequestXssPositive()
         {
             ObjectResolver.RegisterType<IProcessManager, ProcessManager>();
