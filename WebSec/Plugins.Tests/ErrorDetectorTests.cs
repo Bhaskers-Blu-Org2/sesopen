@@ -40,7 +40,7 @@ namespace WebSec.Plugins.Tests
 
             // Validate
             // There should be one well formed vuln
-            vulns.Count.ShouldEqual(1);
+            vulns.Count.ShouldEqual(2);
             var vuln = vulns.Single(x => x.Title == ".Net Exception");
 
             // An exception should be found.
@@ -54,17 +54,17 @@ namespace WebSec.Plugins.Tests
         public void ServerErrorPositive()
         {
             // Setup
-            var target = Target.Create($"{Constants.VulnerabilitiesAddress}PluginsTestPages/ServerError200.aspx");
+            var target = Target.Create($"{Constants.VulnerabilitiesAddress}PluginsTestPages/ServerError503.aspx?q=test");
 
             var vulns = ExecutePluginDetectorRequest(target);
 
             // Validate
             // There should be one well formed vuln
             vulns.Count.ShouldEqual(1);
-            var vuln = vulns.Single(x => x.Title == "Page Unavailable");
+            var vuln = vulns.Single(x => x.Title == "Server Error");
 
             // An expected message should be returned.
-            (vuln.Evidence.IndexOfOi(@"The page you want isn't available") > -1).ShouldBeTrue();
+            (vuln.Evidence.IndexOfOi(@"HTTP Status: ServiceUnavailable") > -1).ShouldBeTrue();
         }
 
         /// <summary>

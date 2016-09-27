@@ -35,7 +35,7 @@ namespace WebSec.Common
         /// <summary>
         /// The vulnerabilities site ssl port.
         /// </summary>
-        public const int VulnerabilitiesSiteSslPort = 44355;
+        public const int VulnerabilitiesSiteSslPort = 44300;
 
         /// <summary>
         /// The fiddler port.

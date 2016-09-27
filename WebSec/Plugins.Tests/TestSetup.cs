@@ -27,8 +27,8 @@ namespace WebSec.Plugins.Tests
         public static void AssemblyInit(TestContext context)
         {
             AssertFailureExceptionFactory.ConfigureForMicrosoftTest();
-            TestSetupHelpers.StartIisExpress();
             TestSetupHelpers.CleanSeleniumDriver();
+            TestSetupHelpers.StartIisExpress();
         }
     }
 }

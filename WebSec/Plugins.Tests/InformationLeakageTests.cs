@@ -83,29 +83,6 @@ namespace WebSec.Plugins.Tests
         }
 
         /// <summary>
-        /// The test information leakage exchange secure cookies over http.
-        /// </summary>
-        [TestMethod]
-        public void TestInformationLeakageExchangeSecureCookiesOverHttpPositive()
-        {
-            // Setup
-            var target =
-                Target.Create($"{Constants.VulnerabilitiesAddress}PluginsTestPages/CookieTesterPage.aspx?secure=test");
-
-            var vulns = ExecutePluginDetectorRequest(target);
-
-            // todo browser does not collect cookies yet, implement this
-            // Validate
-            vulns.Count.ShouldEqual(1);
-            var vuln =
-                vulns.Single(x => x.Title == "Information Leakage - Secured cookie exchanged over non-secure http.");
-
-            var evidences = vuln.Evidence.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-
-            evidences.ShouldContainOnly("SecuredCookie");
-        }
-
-        /// <summary>
         /// The test information leakage exchange secure cookies over http negative.
         /// </summary>
         [TestMethod]

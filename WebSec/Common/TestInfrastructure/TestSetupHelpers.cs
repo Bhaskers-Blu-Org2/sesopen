@@ -36,18 +36,17 @@ namespace WebSec.Common.TestInfrastructure
         /// </summary>
         public static void StartIisExpress()
         {
-            var exePath = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
-                @"IIS Express\IISExpress.EXE");
-
             if (CheckAvailableServerPort(Constants.VulnerabilitiesSitePort))
             {
                 StartSite(
                     Path.Combine(
                         new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName,
                         "VulnerableSite"),
-                    exePath,
-                    Constants.VulnerabilitiesSitePort);
+                    Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+                @"IIS Express\IISExpress.EXE"),
+                    Constants.VulnerabilitiesSitePort, 
+                    false);
             }
 
             if (CheckAvailableServerPort(Constants.VulnerabilitiesSiteSslPort))
@@ -56,8 +55,11 @@ namespace WebSec.Common.TestInfrastructure
                     Path.Combine(
                         new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName,
                         "VulnerableSite"),
-                    exePath,
-                    Constants.VulnerabilitiesSiteSslPort);
+                    Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+                @"IIS Express\IisExpressAdminCmd.EXE"),
+                    Constants.VulnerabilitiesSiteSslPort, 
+                    true);
             }
         }
 
@@ -85,16 +87,11 @@ namespace WebSec.Common.TestInfrastructure
         /// <summary>
         /// Starts a site.
         /// </summary>
-        /// <param name="sitePath">
-        /// Full pathname of the site file.
-        /// </param>
-        /// <param name="exePath">
-        /// Full pathname of the ii s executable file.
-        /// </param>
-        /// <param name="port">
-        /// The port.
-        /// </param>
-        private static void StartSite(string sitePath, string exePath, int port)
+        /// <param name="sitePath">Full pathname of the site file.</param>
+        /// <param name="exePath">Full pathname of the ii s executable file.</param>
+        /// <param name="port">The port.</param>
+        /// <param name="ssl">if set to <c>true</c> [SSL].</param>
+        private static void StartSite(string sitePath, string exePath, int port, bool ssl)
         {
             // create a new process to start the IIS Express Server
             using (var process = new Process
@@ -102,7 +99,7 @@ namespace WebSec.Common.TestInfrastructure
                 StartInfo =
                 {
                     FileName = exePath,
-                    Arguments = "/path:{0} /port:{1}".FormatIc(sitePath, port),
+                    Arguments = !ssl ? "/path:{0} /port:{1}".FormatIc(sitePath, port) : $"setupSslUrl -url:https://localhost:{port}/ -UseSelfSigned",
                     CreateNoWindow = true,
                     UseShellExecute = false
                 }
@@ -110,6 +107,11 @@ namespace WebSec.Common.TestInfrastructure
             {
                 // start the web site
                 process.Start();
+
+                if (ssl)
+                {
+                    process.WaitForExit();
+                }
             }
         }
     }

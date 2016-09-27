@@ -228,7 +228,7 @@ namespace WebSec.Library.Engine
         /// <param name="webRequestContext">
         /// The web request context.
         /// </param>
-        private static void BrowserNavigateToPage(
+        private void BrowserNavigateToPage(
             ContextSendRequestParameter contextSendRequestParameter,
             Uri uri,
             WebRequestContext webRequestContext)
@@ -260,6 +260,15 @@ namespace WebSec.Library.Engine
 
                 // in case we acquired then set this in the request context
                 webRequestContext.Browser = browser;
+
+                 // Add request cookies.
+                if (this.CurrentCookies.ContainsKey(uri.Host))
+                {
+                    foreach (Cookie cookie in this.CurrentCookies[uri.Host])
+                    {
+                        browser.AddCookie(cookie.Name, cookie.Value, cookie.Domain, cookie.Path, cookie.Expires);
+                    }
+                }
 
                 var stopWatch = new Stopwatch();
                 stopWatch.Start();
