@@ -47,10 +47,14 @@ All dependencies will be downloaded automatically on build time through the NuGe
  * VulnerableSite is a sample site containing vulnerabilities
  
 ### Run
- * Go to [sesopen]/distribution/[configuration build]/worker
+ * Go to 
     ```
       Run cmd
     ```
+
+	```
+	  cd [sesopen]/distribution/[configuration build]/worker
+	```
 
     ```
       Execute Worker.exe -u http://www.bing.com/search?q=test or 
