@@ -1,0 +1,5 @@
+;template file for SqlInjection payload
+;comments start with semicolon
+;payloads should be added line by line
+'
+%20and%2021%20=%2021%20--%201234567

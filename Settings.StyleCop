@@ -1,0 +1,70 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>obj</Value>
+      <Value>ssl</Value>
+      <Value>ms</Value>
+      <Value>Dat</Value>
+      <Value>params</Value>
+      <Value>param</Value>
+      <Value>Ulong</Value>
+      <Value>urls</Value>
+      <Value>Init</Value>
+      <Value>xss</Value>
+      <Value>formated</Value>
+      <Value>interop</Value>
+      <Value>Levenshtein</Value>
+      <Value>ip</Value>
+      <Value>vuln</Value>
+      <Value>Vuln</Value>
+      <Value>Javascript</Value>
+      <Value>utf7</Value>
+      <Value>utf</Value>
+      <Value>vulns</Value>
+      <Value>aspdotnet</Value>
+      <Value>Sql</Value>
+      <Value>sql</Value>
+      <Value>websec</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+  <Analyzers>
+    <Analyzer AnalyzerId="StyleCop.CSharp.DocumentationRules">
+      <Rules>
+        <Rule Name="FileHeaderMustShowCopyright">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
+      <AnalyzerSettings>
+        <StringProperty Name="CompanyName">Microsoft Corporation</StringProperty>
+        <StringProperty Name="Copyright">
+          //-------------------------------------------------------------------------------------------------------
+          // Copyright (C) Microsoft Corporation and contributors. All rights reserved.
+          // See LICENSE.txt file in the project root for full license information.
+          //-------------------------------------------------------------------------------------------------------
+        </StringProperty>
+      </AnalyzerSettings>
+    </Analyzer>
+	<Analyzer AnalyzerId="StyleCop.CSharp.ReadabilityRules">
+      <Rules>
+        <Rule Name="PrefixLocalCallsWithThis">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
+      <AnalyzerSettings />
+    </Analyzer>
+    <Analyzer AnalyzerId="StyleCop.CSharp.ReadabilityRules">
+      <Rules>
+        <Rule Name="UseBuiltInTypeAlias">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
+      <AnalyzerSettings />
+    </Analyzer>
+  </Analyzers>
+</StyleCopSettings>

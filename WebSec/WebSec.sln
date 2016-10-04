@@ -1,0 +1,166 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{09F81BAA-19CB-47CA-BADB-27E00CB5C77A}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EFF69254-3537-44B8-BCE4-74D7905632E5}"
+	ProjectSection(SolutionItems) = preProject
+		..\Settings.StyleCop = ..\Settings.StyleCop
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins", "Plugins\Plugins.csproj", "{5CFE5715-DFF0-4072-A401-12E6812EFEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Tests", "Library.Tests\Library.Tests.csproj", "{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins.Tests", "Plugins.Tests\Plugins.Tests.csproj", "{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payloads", "Payloads", "{8BA44C60-4ED2-4A58-A9F5-7E9F45E18264}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{FFED48B4-C596-4EED-BDB9-D44CB1562957}"
+	ProjectSection(SolutionItems) = preProject
+		Settings\ActivePlugins.cfg = Settings\ActivePlugins.cfg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{C4D485C1-112E-4031-BAC8-17C2122D05B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version", "Version", "{818201FD-9EDD-481D-8B21-C31E9B4D3CCE}"
+	ProjectSection(SolutionItems) = preProject
+		..\Version\VersionAssemblyInfo.cs = ..\Version\VersionAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnerableSite", "..\VulnerableSite\VulnerableSite.csproj", "{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Quick", "Quick", "{82BD620B-CFB5-4A3C-8535-F185D942521B}"
+	ProjectSection(SolutionItems) = preProject
+		Payloads\Quick\AccessControlAllowMethodsDetector.payload = Payloads\Quick\AccessControlAllowMethodsDetector.payload
+		Payloads\Quick\AccessControlAllowOriginDetector.payload = Payloads\Quick\AccessControlAllowOriginDetector.payload
+		Payloads\Quick\CacheControlDetector.payload = Payloads\Quick\CacheControlDetector.payload
+		Payloads\Quick\CacheControlMetaDetector.payload = Payloads\Quick\CacheControlMetaDetector.payload
+		Payloads\Quick\ClickJacking.payload = Payloads\Quick\ClickJacking.payload
+		Payloads\Quick\ContentTypeMismatchDetector.payload = Payloads\Quick\ContentTypeMismatchDetector.payload
+		Payloads\Quick\CookieTester.payload = Payloads\Quick\CookieTester.payload
+		Payloads\Quick\CrossDomainTrust.payload = Payloads\Quick\CrossDomainTrust.payload
+		Payloads\Quick\DirectoryBrowsingDetector.payload = Payloads\Quick\DirectoryBrowsingDetector.payload
+		Payloads\Quick\DirectoryTraversalTest.payload = Payloads\Quick\DirectoryTraversalTest.payload
+		Payloads\Quick\DomXssTest.payload = Payloads\Quick\DomXssTest.payload
+		Payloads\Quick\ErrorDetector.payload = Payloads\Quick\ErrorDetector.payload
+		Payloads\Quick\FingerPrintingDetector.payload = Payloads\Quick\FingerPrintingDetector.payload
+		Payloads\Quick\HttpResponseSplittingInjection.payload = Payloads\Quick\HttpResponseSplittingInjection.payload
+		Payloads\Quick\InformationLeakageDetector.payload = Payloads\Quick\InformationLeakageDetector.payload
+		Payloads\Quick\IntOverflowTester.payload = Payloads\Quick\IntOverflowTester.payload
+		Payloads\Quick\JavascriptDetector.payload = Payloads\Quick\JavascriptDetector.payload
+		Payloads\Quick\NullInjectionTester.payload = Payloads\Quick\NullInjectionTester.payload
+		Payloads\Quick\OpenRedirectTester.payload = Payloads\Quick\OpenRedirectTester.payload
+		Payloads\Quick\PasswordAutocompleteDetector.payload = Payloads\Quick\PasswordAutocompleteDetector.payload
+		Payloads\Quick\PasswordOverHttpsDetector.payload = Payloads\Quick\PasswordOverHttpsDetector.payload
+		Payloads\Quick\PostRequestXssTest.payload = Payloads\Quick\PostRequestXssTest.payload
+		Payloads\Quick\ServerSideIncludesTest.payload = Payloads\Quick\ServerSideIncludesTest.payload
+		Payloads\Quick\SilverlightCrossDomainTrust.payload = Payloads\Quick\SilverlightCrossDomainTrust.payload
+		Payloads\Quick\SqlInjection.payload = Payloads\Quick\SqlInjection.payload
+		Payloads\Quick\SqlInjectionErrorTestCase.payload = Payloads\Quick\SqlInjectionErrorTestCase.payload
+		Payloads\Quick\SqlInjectionTimingTestCase.payload = Payloads\Quick\SqlInjectionTimingTestCase.payload
+		Payloads\Quick\SslCertificateTester.payload = Payloads\Quick\SslCertificateTester.payload
+		Payloads\Quick\SslConstraintDetector.payload = Payloads\Quick\SslConstraintDetector.payload
+		Payloads\Quick\TemplateInjectionTest.payload = Payloads\Quick\TemplateInjectionTest.payload
+		Payloads\Quick\ViewStateDetector.payload = Payloads\Quick\ViewStateDetector.payload
+		Payloads\Quick\XssTestAttributeOnError.payload = Payloads\Quick\XssTestAttributeOnError.payload
+		Payloads\Quick\XssTestAttributeOnLoad.payload = Payloads\Quick\XssTestAttributeOnLoad.payload
+		Payloads\Quick\XssTestAttributeOnSrc.payload = Payloads\Quick\XssTestAttributeOnSrc.payload
+		Payloads\Quick\XssTestAttributeOnStyle.payload = Payloads\Quick\XssTestAttributeOnStyle.payload
+		Payloads\Quick\XssTestHtml5.payload = Payloads\Quick\XssTestHtml5.payload
+		Payloads\Quick\XssTestScriptInjection.payload = Payloads\Quick\XssTestScriptInjection.payload
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Full", "Full", "{CAB1D139-F6B9-4F0F-A8D8-F0B3C79E90D6}"
+	ProjectSection(SolutionItems) = preProject
+		Payloads\Full\AccessControlAllowMethodsDetector.payload = Payloads\Full\AccessControlAllowMethodsDetector.payload
+		Payloads\Full\AccessControlAllowOriginDetector.payload = Payloads\Full\AccessControlAllowOriginDetector.payload
+		Payloads\Full\CacheControlDetector.payload = Payloads\Full\CacheControlDetector.payload
+		Payloads\Full\CacheControlMetaDetector.payload = Payloads\Full\CacheControlMetaDetector.payload
+		Payloads\Full\ClickJacking.payload = Payloads\Full\ClickJacking.payload
+		Payloads\Full\ContentTypeMismatchDetector.payload = Payloads\Full\ContentTypeMismatchDetector.payload
+		Payloads\Full\CookieTester.payload = Payloads\Full\CookieTester.payload
+		Payloads\Full\CrossDomainTrust.payload = Payloads\Full\CrossDomainTrust.payload
+		Payloads\Full\DirectoryBrowsingDetector.payload = Payloads\Full\DirectoryBrowsingDetector.payload
+		Payloads\Full\DirectoryTraversalTest.payload = Payloads\Full\DirectoryTraversalTest.payload
+		Payloads\Full\DomXssTest.payload = Payloads\Full\DomXssTest.payload
+		Payloads\Full\ErrorDetector.payload = Payloads\Full\ErrorDetector.payload
+		Payloads\Full\FingerPrintingDetector.payload = Payloads\Full\FingerPrintingDetector.payload
+		Payloads\Full\HttpResponseSplittingInjection.payload = Payloads\Full\HttpResponseSplittingInjection.payload
+		Payloads\Full\InformationLeakageDetector.payload = Payloads\Full\InformationLeakageDetector.payload
+		Payloads\Full\IntOverflowTester.payload = Payloads\Full\IntOverflowTester.payload
+		Payloads\Full\JavascriptDetector.payload = Payloads\Full\JavascriptDetector.payload
+		Payloads\Full\NullInjectionTester.payload = Payloads\Full\NullInjectionTester.payload
+		Payloads\Full\OpenRedirectTester.payload = Payloads\Full\OpenRedirectTester.payload
+		Payloads\Full\PasswordAutocompleteDetector.payload = Payloads\Full\PasswordAutocompleteDetector.payload
+		Payloads\Full\PasswordOverHttpsDetector.payload = Payloads\Full\PasswordOverHttpsDetector.payload
+		Payloads\Full\PostRequestXssTest.payload = Payloads\Full\PostRequestXssTest.payload
+		Payloads\Full\ServerSideIncludesTest.payload = Payloads\Full\ServerSideIncludesTest.payload
+		Payloads\Full\SilverlightCrossDomainTrust.payload = Payloads\Full\SilverlightCrossDomainTrust.payload
+		Payloads\Full\SqlInjection.payload = Payloads\Full\SqlInjection.payload
+		Payloads\Full\SqlInjectionErrorTestCase.payload = Payloads\Full\SqlInjectionErrorTestCase.payload
+		Payloads\Full\SqlInjectionTimingTestCase.payload = Payloads\Full\SqlInjectionTimingTestCase.payload
+		Payloads\Full\SslCertificateTester.payload = Payloads\Full\SslCertificateTester.payload
+		Payloads\Full\SslConstraintDetector.payload = Payloads\Full\SslConstraintDetector.payload
+		Payloads\Full\TemplateInjectionTest.payload = Payloads\Full\TemplateInjectionTest.payload
+		Payloads\Full\ViewStateDetector.payload = Payloads\Full\ViewStateDetector.payload
+		Payloads\Full\XssTestAttributeOnError.payload = Payloads\Full\XssTestAttributeOnError.payload
+		Payloads\Full\XssTestAttributeOnLoad.payload = Payloads\Full\XssTestAttributeOnLoad.payload
+		Payloads\Full\XssTestAttributeOnSrc.payload = Payloads\Full\XssTestAttributeOnSrc.payload
+		Payloads\Full\XssTestAttributeOnStyle.payload = Payloads\Full\XssTestAttributeOnStyle.payload
+		Payloads\Full\XssTestHtml5.payload = Payloads\Full\XssTestHtml5.payload
+		Payloads\Full\XssTestScriptInjection.payload = Payloads\Full\XssTestScriptInjection.payload
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CFE5715-DFF0-4072-A401-12E6812EFEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CFE5715-DFF0-4072-A401-12E6812EFEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CFE5715-DFF0-4072-A401-12E6812EFEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CFE5715-DFF0-4072-A401-12E6812EFEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D485C1-112E-4031-BAC8-17C2122D05B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D485C1-112E-4031-BAC8-17C2122D05B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D485C1-112E-4031-BAC8-17C2122D05B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D485C1-112E-4031-BAC8-17C2122D05B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82BD620B-CFB5-4A3C-8535-F185D942521B} = {8BA44C60-4ED2-4A58-A9F5-7E9F45E18264}
+		{CAB1D139-F6B9-4F0F-A8D8-F0B3C79E90D6} = {8BA44C60-4ED2-4A58-A9F5-7E9F45E18264}
+	EndGlobalSection
+EndGlobal

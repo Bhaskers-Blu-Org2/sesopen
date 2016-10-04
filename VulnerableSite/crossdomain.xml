@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<!-- http://www.adobe.com/crossdomain.xml -->
+<cross-domain-policy>
+  <allow-access-from domain="*.adobe.com" secure="true"/>
+  <allow-access-from domain="*.bing.com"/>
+  <allow-access-from domain="*" secure="true"/>
+  <allow-access-from domain="*.bing.net"/>
+  <allow-access-from domain="*.contoso.com" secure="false"/>
+  <allow-http-request-headers-from domain="*.contoso.com" headers="*"/>
+  <allow-http-request-headers-from domain="*" headers="Header"/>
+</cross-domain-policy>

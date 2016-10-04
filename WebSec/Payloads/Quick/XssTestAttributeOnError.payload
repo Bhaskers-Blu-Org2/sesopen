@@ -1,0 +1,4 @@
+;template file for XssTestAttributeOnError payload
+;comments start with semicolon
+;payloads should be added line by line
+onerror=alert(501337);

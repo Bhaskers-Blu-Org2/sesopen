@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects" DefaultTargets="Build">
+  <PropertyGroup>
+    <MSBuildToolsPath32>C:\Program Files (x86)\MSBuild\14.0\bin\</MSBuildToolsPath32>
+    <MSBuildToolsRoot>C:\Program Files (x86)\MSBuild\</MSBuildToolsRoot>
+    <MSBuildFrameworkToolsPath>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\</MSBuildFrameworkToolsPath>
+    <MSBuildFrameworkToolsPath32>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\</MSBuildFrameworkToolsPath32>
+    <MSBuildFrameworkToolsRoot>C:\WINDOWS\Microsoft.NET\Framework\</MSBuildFrameworkToolsRoot>
+    <MSBuildRuntimeVersion>4.0.30319</MSBuildRuntimeVersion>
+    <FrameworkSDKRoot>C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\</FrameworkSDKRoot>
+    <SDK35ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\</SDK35ToolsPath>
+    <SDK40ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6 Tools\</SDK40ToolsPath>
+    <VCTargetsPath>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\</VCTargetsPath>
+    <VCTargetsPath10>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\</VCTargetsPath10>
+    <VCTargetsPath11>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\</VCTargetsPath11>
+    <VCTargetsPath12>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\</VCTargetsPath12>
+    <VCTargetsPath14>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\</VCTargetsPath14>
+    <WindowsSDK80Path>C:\Program Files (x86)\Windows Kits\8.1\</WindowsSDK80Path>
+    <Configuration>Debug</Configuration>
+    <Platform>Any CPU</Platform>
+    <AspNetConfiguration>Debug</AspNetConfiguration>
+    <SolutionDir>c:\WebSec\SesOpen\sesopen\WebSec\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>WebSec.sln</SolutionFileName>
+    <SolutionName>WebSec</SolutionName>
+    <SolutionPath>c:\WebSec\SesOpen\sesopen\WebSec\WebSec.sln</SolutionPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{5CFE5715-DFF0-4072-A401-12E6812EFEC5}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C4D485C1-112E-4031-BAC8-17C2122D05B6}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <SolutionConfiguration Include="Debug|Any CPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{5CFE5715-DFF0-4072-A401-12E6812EFEC5}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C4D485C1-112E-4031-BAC8-17C2122D05B6}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Release|Any CPU">
+      <Configuration>Release</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{E6C5ED9B-FF1A-4EF0-8C88-E208A6EBEF35}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{7D5C96EB-0AF9-489B-972A-4606A0C1AD72}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{5CFE5715-DFF0-4072-A401-12E6812EFEC5}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F6853FA6-BA6C-491B-9C6E-ABFE7063080E}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{149BC2CB-EB92-4B39-ADD3-E4465FF4F0D7}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{C4D485C1-112E-4031-BAC8-17C2122D05B6}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{346749F1-F43B-4E34-9DDC-84FF3A9A82D8}" AbsolutePath="c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Warning Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Message Condition="'$(CurrentSolutionConfigurationContents)' != ''" Text="Building solution configuration &quot;$(Configuration)|$(Platform)&quot;." />
+  </Target>
+  <Target Name="ValidateToolsVersions">
+    <Error Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" Text="The tools version &quot;$(MSBuildToolsVersion)&quot; of the solution does not support building projects with a different tools version." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" />
+  </Target>
+  <Target Name="ValidateProjects" />
+  <Target Name="GetSolutionConfigurationContents" Outputs="$(SolutionConfigurationContents)" />
+  <Target Name="Build" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="@(ProjectReference-&gt;Reverse())" Targets="Clean" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="Rebuild" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Publish">
+    <MSBuild Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="Common" Outputs="@(CommonBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CommonBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Common:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Common:Rebuild" Outputs="@(CommonBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="CommonBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Common:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Common\Common.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Library" Outputs="@(LibraryBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="LibraryBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Library:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Library:Rebuild" Outputs="@(LibraryBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="LibraryBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Library:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library\Library.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Plugins" Outputs="@(PluginsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="PluginsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Plugins:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Plugins:Rebuild" Outputs="@(PluginsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="PluginsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Plugins:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins\Plugins.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Library_Tests" Outputs="@(Library_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Library_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Library_Tests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Library_Tests:Rebuild" Outputs="@(Library_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Library_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Library_Tests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Library.Tests\Library.Tests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Plugins_Tests" Outputs="@(Plugins_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Plugins_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Plugins_Tests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Plugins_Tests:Rebuild" Outputs="@(Plugins_TestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Plugins_TestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Plugins_Tests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Plugins.Tests\Plugins.Tests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Worker" Outputs="@(WorkerBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WorkerBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Worker:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Worker:Rebuild" Outputs="@(WorkerBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="WorkerBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Worker:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\Worker\Worker.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="VulnerableSite" Outputs="@(VulnerableSiteBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="VulnerableSiteBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="VulnerableSite:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="VulnerableSite:Rebuild" Outputs="@(VulnerableSiteBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="VulnerableSiteBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="VulnerableSite:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'c:\WebSec\SesOpen\sesopen\WebSec\..\VulnerableSite\VulnerableSite.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+</Project>
